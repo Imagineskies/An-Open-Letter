@@ -1,0 +1,258 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: #FAF5F2;
+  color: #B4AA97;
+}
+
+body {
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-moz-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-moz-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-moz-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-moz-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.shown {
+  visibility: visible;
+  display: block;
+}
+
+.overshown {
+  overflow-y: scroll;
+}
+
+.overhidden {
+  overflow: hidden;
+}
+
+.backgroundfix {
+  background-attachment: fixed !important;
+}
+
+
+/*____________________________________________________________________________________*/
+/* Header */
+header.masthead {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAFklEQVQImWNggID/UAwhkDn/GRgYGABruwX7wILHgAAAAABJRU5ErkJggg==") repeat,
+  url(../img/will-van-wingerden-dsvJgiBJTOs-unsplash.jpg);
+  background-position: center center;
+  background-size: auto, cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+header.masthead h1 {
+  color: #669b9e;
+  font-size: 126px;
+  font-weight: 600;
+  text-shadow: 5px 5px #9f481d;
+  font-family: 'Aspire', script;
+}
+
+header.masthead .row,
+header.masthead  .container {
+  width: 100%;
+  height: 100%;
+}
+
+/*____________________________________________________________________________________*/
+/* Navbar */
+
+nav#mainNav {
+  background-color: #0D1313;
+  padding: 15px;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  top: -50px;
+  left: 0;
+}
+
+#navbarBrand {
+  color: #d8af94;
+}
+
+nav#mainNav .fab {
+  font-size: 32px;
+  color: #d8af94;
+}
+
+nav#mainNav .dropdown-menu {
+  background-color: #FFF;
+}
+
+nav#mainNav .dropdown-item {
+  color: #d8af94;
+}
+
+nav#mainNav .nav-link {
+  color: #d8af94;
+}
+
+nav#mainNav.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+#navbarWrapper {
+  position: absolute;
+  left: 0;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+.centerSlide{
+  animation-name: centerSlide;
+}
+
+@keyframes centerSlide {
+  from {
+    left: 0;
+  }
+  to {
+    left: 20%;
+  }
+}
+
+.leftSlide{
+  animation-name: leftSlide;
+}
+
+@keyframes leftSlide {
+  from {
+    left: 20%;
+  }
+  to {
+    left: 0;
+  }
+}
+/*____________________________________________________________________________________*/
+/* Buttons */
+.btn {
+  background-color: inherit;
+  color: inherit;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: #16181b;
+  background-color: #977A67;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+.btn.active {
+  background-color: #A8897D;
+  color: #0D1313;
+}
+
+.btn:focus, .btn:active {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/*____________________________________________________________________________________*/
+/* Text */
+
+a, ul, ol, li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, .p, h1, h2, h3, h4, h5, h6, p {
+  padding: 15px;
+  margin: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #9f481d;
+  font-weight: 600;
+  font-family: 'Work', sans-serif;
+}
+
+.h1, h1 {
+  font-size: 72px;
+}
+
+.h2, h2 {
+  font-size: 60px;
+}
+
+.h3, h3 {
+  font-size: 48px;
+}
+
+@media (max-width: 719px) {
+  .h3, h3 {
+    font-size: 34px;
+  }
+}
+
+.h4, h4 {
+  font-size: 36px;
+}
+
+.h5, h5 {
+  font-size: 24px;
+}
+
+.h6, h6 {
+  font-size: 20px;
+}
+
+.p, p {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
