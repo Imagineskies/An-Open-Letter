@@ -1,20 +1,60 @@
+/*
+Here is all the local fonts used in this template.
+*/
+
+
+/*____________________________________________________________________________________*/
+/* Aspire */
+
 @font-face {
   font-family:"Aspire";
   src: url(../fonts/AspireDemibold-YaaO.ttf);
 }
+
+/*____________________________________________________________________________________*/
+/* Painting with Chocolate */
+
 @font-face {
   font-family:"Paint";
   src: url(../fonts/Paintingwithchocolate-K5mo.ttf);
 }
+
+/*____________________________________________________________________________________*/
+/* Work Sans */
+
 @font-face {
-  font-family:"Work";
+  font-family:"Work", sans-serif;
   src: url(../fonts/WorkSans-Regular.ttf);
 }
+
+/*____________________________________________________________________________________*/
+/* Montserrat */
+
 @font-face {
-  font-family:"Paint";
-  src: url(../fonts/Paintingwithchocolate-K5mo.ttf);
+  font-family:"Quicksand-Light";
+  src: url(../fonts/Quicksand-Light.ttf);
 }
 @font-face {
-  font-family:"Paint";
-  src: url(../fonts/Paintingwithchocolate-K5mo.ttf);
+  font-family:"Quicksand-Regular";
+  src: url(../fonts/Quicksand-Regular.ttf);
+}
+@font-face {
+  font-family:"Quicksand-Medium";
+  src: url(../fonts/Quicksand-Medium.ttf);
+}
+@font-face {
+  font-family:"Quicksand-SemiBold";
+  src: url(../fonts/Quicksand-SemiBold.ttf);
+}
+@font-face {
+  font-family:"Quicksand-Bold";
+  src: url(../fonts/fonts/Quicksand-Bold.ttf);
+}
+
+/*____________________________________________________________________________________*/
+/* Buttons */
+
+@font-face {
+  font-family:"Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf);
 }
