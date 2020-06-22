@@ -35,16 +35,22 @@ $(".sliding-link").click(function(e) {
 window.onscroll = function(){
   var scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
   console.log(mainNavPos, scrollPos);
-  if (scrollPos >= 50){
-    mainNav.classList.add('sticky');
+  if (scrollPos >= 79){
     navbarWrapper.classList.add('centerSlide');
     navbarWrapper.classList.remove('leftSlide');
+    window.farm = '1';
+    console.log(farm)
+  }  else if (farm=='1' && scrollPos<=79) {
+    console.log('ran')
+    navbarWrapper.classList.remove('centerSlide');
+    navbarWrapper.classList.add('leftSlide');
+  }
+   if (scrollPos >= mainNavPos){
+    mainNav.classList.add('sticky');
     window.farm = '1';
     console.log(farm)
   } else if (farm=='1' && scrollPos<=mainNavPos) {
     console.log('ran')
     mainNav.classList.remove('sticky');
-    navbarWrapper.classList.remove('centerSlide');
-    navbarWrapper.classList.add('leftSlide');
   }
 }
