@@ -70,6 +70,7 @@ body {
 
 /*____________________________________________________________________________________*/
 /* Header */
+
 header.masthead {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAFklEQVQImWNggID/UAwhkDn/GRgYGABruwX7wILHgAAAAABJRU5ErkJggg==") repeat,
   url(../img/will-van-wingerden-dsvJgiBJTOs-unsplash.jpg);
@@ -85,7 +86,7 @@ header.masthead h1 {
   font-size: 126px;
   font-weight: 600;
   text-shadow: 5px 5px #9f481d;
-  font-family: 'Aspire', script;
+  font-family: 'Aspire';
 }
 
 header.masthead .row,
@@ -124,7 +125,7 @@ nav#mainNav .dropdown-item {
   color: #d8af94;
 }
 
-nav#mainNav .nav-link {
+.nav-link {
   color: #d8af94;
 }
 
@@ -132,6 +133,18 @@ nav#mainNav.sticky {
   position: fixed;
   top: 0;
   z-index: 1;
+}
+
+aside#updateMenu.sticky {
+  position: fixed;
+  top: 100px;
+  right: 45px;
+  z-index: 1;
+}
+
+aside#defaultAside .list-group-item {
+  background-color: transparent;
+  text-align: center;
 }
 
 #navbarWrapper {
@@ -170,13 +183,87 @@ nav#mainNav.sticky {
     left: 0;
   }
 }
+
+/*____________________________________________________________________________________*/
+/* Games First Page*/
+/* Some parts from w3schools */
+#gameIcon {
+  margin: 25px 0;
+}
+
+#gameIcon .col-sm-6 {
+  position: relative;
+  width: 50%;
+}
+
+#gameIcon .col-sm-6:hover .gameOverlay {
+  opacity: 1;
+}
+
+#gameIcon .row {
+  margin: 30px 0;
+}
+
+img.gameIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.gameTitle {
+  display: none;
+}
+
+.gameOverlayTitle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.gameOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  right: 0;
+  height: 100%;
+  width: calc(100% - 30px);
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.80);
+}
+
+@media (max-width: 719px) {
+  img.gameIcon {
+    width: 320px;
+    height: 320px;
+  }
+
+  #gameIcon .col-sm-6 {
+    position: static;
+    display: block;
+    width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .gameTitle {
+    display: block;
+  }
+
+  .gameOverlay {
+    display: none;
+  }
+}
+
+
 /*____________________________________________________________________________________*/
 /* Buttons */
 .btn {
-  background-color: inherit;
-  color: inherit;
-  width: auto;
-  height: auto;
+  background-color: transparent;
+  color: #d8af94;
   text-decoration: none;
   border-radius: 0;
 }
@@ -190,16 +277,56 @@ nav#mainNav.sticky {
 }
 
 .btn.active {
-  background-color: #A8897D;
-  color: #0D1313;
+  color: #0d1313;
+  background-color: #977A67;
 }
 
-.btn:focus, .btn:active {
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-radius: 0
+.btn.active:hover {
+  color: #0d1313;
+  background-color: #d8af94;
 }
+
+aside .btn {
+  background-color: #faf5f2;
+  color: #9f481d;
+  width: 100%;
+  height: auto;
+  font-size: inherit;
+  text-align: right;
+  text-decoration: none;
+  border-radius: 0;
+}
+
+aside .btn:hover {
+  color: #faf5f2;
+  background-color: #9f481d;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+aside .btn.active {
+  color: #faf5f2;
+  background-color: #9f481d;
+}
+
+/*____________________________________________________________________________________*/
+/* The Update Specifics */
+
+article .header {
+  border: 3px solid #9f481d;
+}
+
+article .header hr {
+  width: 50%;
+  border-top: 3px solid #9f481d;
+  text-align: center;
+}
+
+article .content {
+  padding: 25px;
+}
+
 
 /*____________________________________________________________________________________*/
 /* Text */
@@ -210,7 +337,6 @@ a, ul, ol, li {
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, .p, h1, h2, h3, h4, h5, h6, p {
-  padding: 15px;
   margin: 10px;
 }
 
@@ -220,7 +346,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #9f481d;
-  font-weight: 600;
+  font-weight: 600 !important;
   font-family: 'Work', sans-serif;
 }
 
@@ -238,6 +364,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .h4, h4 {
   font-size: 36px;
+}
+
+aside h5 {
+  text-align: right;
 }
 
 .h5, h5 {
