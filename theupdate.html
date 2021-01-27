@@ -12,7 +12,7 @@
   <title>An Open Letter</title>
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Style Css -->
   <link href="css/main.css" rel="stylesheet">
   <!-- Font/icon List -->
@@ -23,10 +23,10 @@
 <body id="body">
 
   <header class="masthead">
-    <div class="container d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center">
       <div class="row">
         <div class="col-lg-10 mx-auto d-flex flex-column justify-content-center">
-          <h1>An Open Letter</h1>
+          <h1 class="site-title">An Open Letter</h1>
         </div>
       </div>
     </div>
@@ -122,14 +122,14 @@
     </div> <!-- / .container -->
   </nav>
 
-  <main>
+  <main id="main">
     <div class="container">
       <div class="row">
         <article class="col-lg-9">
           <div class="header">
             <h1 class="sectionTitle">The Update</h1>
             <p class="articleSubTitle">
-              The news to be aware of.
+              News to be aware of.
             </p>
             <hr>
             <h2 class="sectionPage">Trending</h2>
@@ -155,7 +155,7 @@
             </div>
           </div>
         </article>
-        <aside id="updateMenu" class="col-lg-3">
+        <aside id="updateMenu" class="col-lg-3 non-sticky">
           <h6 class="btn active">Trending</h6>
           <div style="height: 10px;"></div>
           <h6 class="btn">Local</h6>
@@ -178,7 +178,7 @@
 
   <!-- Bootstrap core JavaScript -->
   <script src="js/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
   <script src="js/jquery.easing.min.js"></script>

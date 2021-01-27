@@ -12,7 +12,7 @@
   <title>An Open Letter</title>
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Style Css -->
   <link href="css/main.css" rel="stylesheet">
   <!-- Font/icon List -->
@@ -23,10 +23,10 @@
 <body id="body">
 
   <header class="masthead">
-    <div class="container d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center">
       <div class="row">
         <div class="col-lg-10 mx-auto d-flex flex-column justify-content-center">
-          <h1>An Open Letter</h1>
+          <h1 class="site-title">An Open Letter</h1>
         </div>
       </div>
     </div>
@@ -155,15 +155,34 @@
             </div>
           </div>
         </article>
-        <aside class="col-lg-2 text-center">
+        <aside id="defaultAside" class="col-lg-2 text-center">
           <h4>Author</h4>
-          <div style="height: 100px;"></div>
+          <ul class="list-group list-group-flush"> <!-- Author -->
+            <li class="list-group-item">Tomoko Gambardella</li>
+            <li class="list-group-item">Evelyn Hewins</li>
+            <li class="list-group-item">Rickey Fazzinga</li>
+          </ul>
           <h4>Links</h4>
-          <div style="height: 100px;"></div>
-          <h4>Recent Story</h4>
-          <div style="height: 100px;"></div>
+          <ul class="list-group list-group-flush"> <!-- Links -->
+            <li class="list-group-item">Twitter</li>
+            <li class="list-group-item">Instagram</li>
+            <li class="list-group-item">Facebook</li>
+            <li class="list-group-item">Linkdin</li>
+          </ul>
+          <h4>Recent Stories</h4>
+          <ul class="list-group list-group-flush"> <!-- Recent Stories -->
+            <li class="list-group-item">Rebels Of The Fallen</li>
+            <li class="list-group-item">Leaders Of Everywhere</li>
+            <li class="list-group-item">Experience In Technolic Advancements</li>
+            <li class="list-group-item">Doctors And Figures</li>
+          </ul>
           <h4>Archives</h4>
-          <div style="height: 100px;"></div>
+          <ul class="list-group list-group-flush"> <!-- Archive -->
+            <li class="list-group-item">2019</li>
+            <li class="list-group-item">2018</li>
+            <li class="list-group-item">2017</li>
+            <li class="list-group-item">2016</li>
+          </ul>
         </aside>
       </div>
     </div>
@@ -172,7 +191,7 @@
 
   <!-- Bootstrap core JavaScript -->
   <script src="js/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
   <script src="js/jquery.easing.min.js"></script>

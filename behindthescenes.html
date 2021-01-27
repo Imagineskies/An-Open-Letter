@@ -12,7 +12,7 @@
   <title>An Open Letter</title>
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Style Css -->
   <link href="css/main.css" rel="stylesheet">
   <!-- Font/icon List -->
@@ -23,10 +23,10 @@
 <body id="body">
 
   <header class="masthead">
-    <div class="container d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center">
       <div class="row">
         <div class="col-lg-10 mx-auto d-flex flex-column justify-content-center">
-          <h1>An Open Letter</h1>
+          <h1 class="site-title">An Open Letter</h1>
         </div>
       </div>
     </div>
@@ -128,21 +128,40 @@
         <article class="col-lg-10">
           <hr>
           <h1>Behind The Scenes</h1>
-          <p class="articleSubTitle">This is what makes us run, and what we're doing so we keep running.</p>
+          <p class="articleSubTitle">This is what got us to walk, jog, run, and keeps us running.</p>
           <hr>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dignissim urna. Nunc imperdiet finibus orci, sit amet luctus est malesuada et. Morbi et leo tincidunt, consequat tellus luctus, vestibulum nisl. Etiam eu accumsan nunc, nec commodo lacus. Nulla at tincidunt mauris. Donec non mauris mattis, commodo est quis, luctus nulla. Donec imperdiet ut sem ut gravida. Mauris dictum magna nec sapien rutrum tincidunt. Vivamus congue ante scelerisque vehicula imperdiet. Cras tincidunt nulla ac ligula sollicitudin, nec elementum sapien blandit. Duis bibendum metus nec metus pretium tempus. Duis rutrum sem quis neque ultrices efficitur. Sed euismod commodo massa. Nullam eu rutrum ante. Ut at venenatis metus. Phasellus pulvinar nunc eu euismod finibus.
           </p>
         </article>
-        <aside class="col-lg-2 text-center">
-          <h4>Author</h4>
-          <div style="height: 100px;"></div>
-          <h4>Links</h4>
-          <div style="height: 100px;"></div>
-          <h4>Recent Story</h4>
-          <div style="height: 100px;"></div>
-          <h4>Archives</h4>
-          <div style="height: 100px;"></div>
+        <aside id="defaultAside" class="col-lg-2 text-center">
+        <h4>Author</h4>
+        <ul class="list-group list-group-flush"> <!-- Author -->
+          <li class="list-group-item">Tomoko Gambardella</li>
+          <li class="list-group-item">Evelyn Hewins</li>
+          <li class="list-group-item">Rickey Fazzinga</li>
+        </ul>
+        <h4>Links</h4>
+        <ul class="list-group list-group-flush"> <!-- Links -->
+          <li class="list-group-item">Twitter</li>
+          <li class="list-group-item">Instagram</li>
+          <li class="list-group-item">Facebook</li>
+          <li class="list-group-item">Linkdin</li>
+        </ul>
+        <h4>Recent Stories</h4>
+        <ul class="list-group list-group-flush"> <!-- Recent Stories -->
+          <li class="list-group-item">Rebels Of The Fallen</li>
+          <li class="list-group-item">Leaders Of Everywhere</li>
+          <li class="list-group-item">Experience In Technolic Advancements</li>
+          <li class="list-group-item">Doctors And Figures</li>
+        </ul>
+        <h4>Archives</h4>
+        <ul class="list-group list-group-flush"> <!-- Archive -->
+          <li class="list-group-item">2019</li>
+          <li class="list-group-item">2018</li>
+          <li class="list-group-item">2017</li>
+          <li class="list-group-item">2016</li>
+        </ul>
         </aside>
       </div>
     </div>
@@ -151,7 +170,7 @@
 
   <!-- Bootstrap core JavaScript -->
   <script src="js/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
   <script src="js/jquery.easing.min.js"></script>
